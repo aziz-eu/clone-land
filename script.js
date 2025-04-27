@@ -275,6 +275,18 @@ hr {
   text-align: left !important;
   padding-left: 5px;
 }
+  .left-text {
+  text-align: left !important;
+  padding-left: 8px;
+}
+
+.owner {
+  width: 62%;
+}
+
+.cls{
+  width: 32%;
+}
 
   
 @page {

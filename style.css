@@ -290,7 +290,15 @@ hr {
 
 .left-text {
   text-align: left !important;
-  padding-left: 5px;
+  padding-left: 8px;
+}
+
+.owner {
+  width: 62%;
+}
+
+.cls {
+  width: 32%;
 }
 
 @media (max-width: 768px) {
