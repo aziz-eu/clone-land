@@ -1,10 +1,10 @@
 
 document.querySelector('.print-btn').addEventListener('click', function ()
 {
-    const receiptContent = document.querySelector('.receipt').innerHTML;
-    const printWindow = window.open('', '', 'height=800,width=800');
+  const receiptContent = document.querySelector('.receipt').innerHTML;
+  const printWindow = window.open('', '', 'height=800,width=800');
 
-    printWindow.document.write(`
+  printWindow.document.write(`
       <html>
         <head>
           <title>ভূমি উন্নয়ন কর পরিশোধ রসিদ</title>
@@ -63,14 +63,13 @@ body {
 .table {
   display: table;
   width: 100%;
-  border: 1px solid #000;
   /* border-collapse: collapse; */
-  border: 1px dotted #000;
+  border: .7px dotted #000;
 }
 
 .table-row {
   display: table-row;
-  border: 1px dotted #000;
+  border: .7px dotted #000;
   font-size: 10px;
 }
 
@@ -220,7 +219,7 @@ hr {
 }
 
 .main-table {
-  border: 1px solid silver;
+  border: .5px solid silver;
   font-size: 13px;
 }
 
@@ -272,6 +271,10 @@ hr {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.left-text {
+  text-align: left !important;
+  padding-left: 5px;
+}
 
   
 @page {
@@ -287,6 +290,6 @@ hr {
       </html>
     `);
 
-    printWindow.document.close();
+  printWindow.document.close();
 });
 
